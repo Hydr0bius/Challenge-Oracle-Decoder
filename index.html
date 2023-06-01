@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="icon" href="./image/datos-encriptados.png" type="image/png" sizes="16x16">
     <!-- <a href="https://www.flaticon.es/iconos-gratis/contrasena" title="contrasena iconos">Contrasena iconos creados por Eucalyp - Flaticon</a> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,15 +16,15 @@
 </head>
 <body>
     <header>
-        <img src="./image/Logo.png" alt="logo alura">
+        <img class="img" src="./image/Logo.png" alt="logo alura">
     </header>
 
     <main>
         <section>
             <textarea class="text-info" cols="30" rows="10" placeholder="ingrese el texto aqui"></textarea>
             <div class="info">
-                <p>Solo letras minúsculas y sin acentos</p>
-                <div>
+                <p class="informacion"><i class="fa-sharp fa-solid fa-circle-exclamation icon"></i> Solo letras minúsculas y sin acentos</p>
+                <div class="btn">
                     <button class="btn-en">Encriptar!</button>
                     <button class="btn-de">Desencriptar!</button>
                 </div>
@@ -29,16 +32,15 @@
         </section>
         <section>
             <textarea class="text-en" cols="30" rows="10"></textarea>
-            <img src="./image/muñeco.png" alt="">
-            <p>Ningún mensaje fue encotrado</p>
-            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            <!-- <p>Ningún mensaje fue encotrado</p> -->
+            <!-- <p>Ingresa el texto que desees encriptar o desencriptar.</p> -->
             <button class="btn-copy">Copiar</button>
         </section>    
     </main>
-    <footer>
+    <footer class="footer">
         <p>Ricardo Polanco Blanco</p>
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/ricardo-polanco-blanco96/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Hydr0bius"><i class="fa-brands fa-github"></i></a>
     </footer>
 </body>
 </html>
