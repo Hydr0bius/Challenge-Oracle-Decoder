@@ -21,19 +21,19 @@
 
     <main>
         <section>
-            <textarea class="text-info" cols="30" rows="10" placeholder="ingrese el texto aqui"></textarea>
+            <textarea class="text-info" id="texto" cols="30" rows="10" placeholder="ingrese el texto aqui"></textarea>
             <div class="info">
                 <p class="informacion"><i class="fa-sharp fa-solid fa-circle-exclamation icon"></i> Solo letras minúsculas y sin acentos</p>
                 <div class="btn">
-                    <button class="btn-en">Encriptar!</button>
-                    <button class="btn-de">Desencriptar!</button>
+                    <button class="btn-en" onclick="encriptar()">Encriptar!</button>
+                    <button class="btn-de" onclick="desencriptar()">Desencriptar!</button>
                 </div>
             </div>
         </section>
-        <section>
-            <textarea class="text-en" cols="30" rows="10"></textarea>
-            <!-- <p>Ningún mensaje fue encotrado</p> -->
-            <!-- <p>Ingresa el texto que desees encriptar o desencriptar.</p> -->
+        <section class="encriptado">
+            <div class="mensaje-en" id="mensaje-en">
+                <textarea class="text-en" id="mensaje" cols="30" rows="10" placeholder="Ningún mensaje fue encotrado"></textarea>
+            </div>
             <button class="btn-copy">Copiar</button>
         </section>    
     </main>
