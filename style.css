@@ -1,12 +1,13 @@
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background:#F3F5FC;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
-    overflow-y: hidden;
-    
-}
+    }
 
 .img{
     padding-top: 10px;
@@ -15,15 +16,44 @@
 }
 
 main{
-    display: flex;
     margin-bottom: 10px;
-    margin-left: 180px;
     height: 80vh;
+    display: grid;
+    grid-template-columns: 50% 400px;
     
+}
+.left{
+    margin-left: 8%;
+    height: 70vh;
+}
+.muneco{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+}
+.right{
+    height: 75vh;
+    margin-left: 5%;
+    background-color: #fff;
+    border-radius: 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    box-shadow: 1px 5px 8px gray;
+}
+.right p{
+    background-color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+.p-title{
+    font-weight: bold;
 }
 
 .text-info {
-    height: 400px;
+    height: 50vh;
     border: none;
     color: #0A3871;
     margin-top: 30px;
@@ -34,23 +64,6 @@ main{
   .text-info:focus {
       outline: none;
     }
-
-.text-en{
-    height: 80vh;
-    background: white;
-    background-image: url("./image/muñeco.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-    border-radius: 24px;
-    color: #0A3871;
-    margin-left: 98px;
-    padding-left: 20px;
-    /* position: fixed; */
-}
-.text-en:focus {
-    outline: none;
-}
 
 .btn{
     display: flex;
@@ -84,10 +97,13 @@ main{
     color: #0A3871;
     cursor: pointer;
     height: 67px;
-    margin-left: 180px;
-    margin-top: -180px;
-    position: absolute;
+    margin-left: 30px;
+    margin-top: -30px;
+    /* position: absolute; */
     width: 336px;
+}
+.oculto{
+    display: none;
 }
 
 .informacion, .icon {
@@ -120,16 +136,22 @@ footer a:not(:hover){
     main{
         margin-left: 10px;
     }
+    .muneco{
+        width: 200px;
+        height: 200px;
+    }
+    .right p{
+        font-size: 18px;
+    }
     .btn-en,.btn-de,.btn-copy{
         height: 40px;
         width: 200px;
         font-size: 18px;
     }
-    .btn-copy{
-        margin-left: 100px;
-    }
-    .text-en{
-        margin-left: 35px;
+}
+@media(max-width:827px){
+    .right{
+        width: 250px;
     }
 }
 @media(max-width: 414px){
@@ -139,15 +161,24 @@ footer a:not(:hover){
     main{
         margin-left: 0px;
     }
-    section:nth-child(1){
+    .left{
+        width: 60%;
+    }
+    .right{
+        margin-left: 0;
         width: 40%;
+    }
+    .right p{
+        font-size: 14px;
+    }
+    .muneco{
+        width: 100px;
+        height: 100px;
+        /* display: none; */
     }
     .text-info{
         width: 90%;
         font-size: 14px;
-    }
-    .text-en{
-        width: 80%;
     }
     .informacion, .icon{
         font-size: 9px;
@@ -161,7 +192,7 @@ footer a:not(:hover){
         margin-left: 10px;
     }
     .btn-copy{
-        margin-top: -100px;
+        margin: 5vh 0 0 0;
         width: 70px;
     }
 }
