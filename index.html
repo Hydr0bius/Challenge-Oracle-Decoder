@@ -20,7 +20,7 @@
     </header>
 
     <main>
-        <section>
+        <section class="left">
             <textarea class="text-info" id="texto" cols="30" rows="10" placeholder="ingrese el texto aqui"></textarea>
             <div class="info">
                 <p class="informacion"><i class="fa-sharp fa-solid fa-circle-exclamation icon"></i> Solo letras minúsculas y sin acentos</p>
@@ -30,11 +30,12 @@
                 </div>
             </div>
         </section>
-        <section class="encriptado">
-            <div class="mensaje-en" id="mensaje-en">
-                <textarea class="text-en" id="mensaje" cols="30" rows="10" placeholder="Ningún mensaje fue encotrado"></textarea>
-            </div>
-            <button class="btn-copy">Copiar</button>
+        <section class="right">
+            <img class="muneco" src="./image/muneco.png" alt="muñeco">
+            <p class="p-title">Ningún mensaje fue encontrado</p>
+            <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                <!-- <textarea class="text-en" id="mensaje" cols="30" rows="10"></textarea> -->
+            <button class="btn-copy oculto" id="btn-copy">Copiar</button>
         </section>    
     </main>
     <footer class="footer">
