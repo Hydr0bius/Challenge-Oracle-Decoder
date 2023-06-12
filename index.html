@@ -31,11 +31,10 @@
             </div>
         </section>
         <section class="right">
-            <img class="muneco" src="./image/Muneco.png" alt="muñeco">
-            <p class="p-title">Ningún mensaje fue encontrado</p>
-            <p>Ingresa el texto que desees encriptar o desencriptar</p>
-                <!-- <textarea class="text-en" id="mensaje" cols="30" rows="10"></textarea> -->
-            <button class="btn-copy oculto" id="btn-copy">Copiar</button>
+            <img id="picture" class="muneco" src="./image/Muneco.png" alt="muñeco">
+            <textarea class="p-title" id="mensaje" name="" cols="30" rows="10" placeholder="Ningun mensaje fue encontrado"></textarea>
+            <p id="mensajeDos">Ingresa el texto que desees encriptar o desencriptar</p>
+            <button class="btn-copy oculto" onclick="copiar()" id="btn-copy">Copiar</button>
         </section>    
     </main>
     <footer class="footer">
