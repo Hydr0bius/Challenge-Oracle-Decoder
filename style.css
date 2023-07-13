@@ -17,7 +17,6 @@
 
 main{
     margin-bottom: 10px;
-    height: 80vh;
     display: grid;
     grid-template-columns: 50% 400px;
     
@@ -33,7 +32,7 @@ main{
 }
 .right{
     height: 75vh;
-    margin-left: 5%;
+    padding-left: 5%;
     background-color: #fff;
     border-radius: 24px;
     box-sizing: border-box;
@@ -157,8 +156,21 @@ footer a:not(:hover){
     }
 }
 @media(max-width:827px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
     .right{
-        width: 250px;
+        width: 95%;
+    }
+    .left{
+        width: 85%;
+    }
+    .p-title{
+        width: 100%;
+    }
+    #picture{
+        display: none;
     }
 }
 @media(max-width: 414px){
@@ -168,20 +180,8 @@ footer a:not(:hover){
     main{
         margin-left: 0px;
     }
-    .left{
-        width: 60%;
-    }
-    .right{
-        margin-left: 0;
-        width: 40%;
-    }
     .right p{
         font-size: 14px;
-    }
-    .muneco{
-        width: 100px;
-        height: 100px;
-        /* display: none; */
     }
     .text-info{
         width: 90%;
@@ -199,7 +199,7 @@ footer a:not(:hover){
         margin-left: 10px;
     }
     .btn-copy{
-        margin: 5vh 0 0 0;
+        margin: 0;
         width: 70px;
     }
 }
